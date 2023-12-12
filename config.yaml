@@ -1,0 +1,13 @@
+credentials:
+  usernames:
+    mgiampietro:
+      email: marco.giampietro@fitcard.com.br
+      name: Marco Giampietro
+      password: $2b$12$au4uYxdL51XdjjNRCHOm9.PRtopAuiD/NMEfxfcBLasdf/A.uGByi # To be replaced with hashed password
+cookie:
+  expiry_days: 30
+  key: random_signature_key # Must be string
+  name: random_cookie_name
+preauthorized:
+  emails:
+  - melsby@gmail.com
