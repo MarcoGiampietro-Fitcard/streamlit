@@ -1,11 +1,12 @@
 import streamlit as st
-import streamlit_authenticator as Authenticate
 import yaml
 from yaml.loader import SafeLoader
-with open('../config.yaml') as file:
+import streamlit_authenticator as stauth
+
+with open('config.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
 
-authenticator = Authenticate(
+authenticator = stauth.Authenticate(
     config['credentials'],
     config['cookie']['name'],
     config['cookie']['key'],
